@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Foodstamp</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+  <!-- top bar -->
+ 
+  <nav class="top-bar">
+    <ul>
+      <!-- Title Area -->
+      <li class="name" >
+        <h1>
+          <a href="#" style="color:#f69220;">
+            Foodstamp
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar"><a href="#"></a></li>
+    </ul>
+
+    <section>
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a class="active" href="#">Item 1</a>
+          <ul class="dropdown">
+            <li><label>Section Name</label></li>
+            <li class="has-dropdown">
+              <a href="#" class="">Level 1, Has Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">Level 2</a></li>
+                <li><a href="#">Level 2</a></li>
+                <li class="has-dropdown"><a href="#">Level 2, Has Dropdown</a>
+                  <ul class="dropdown">
+                    <li><label>Section</label></li>
+                    <li><a href="#">Level 3</a></li>
+                    <li><a href="#">Level 3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Level 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Level 2</a></li>
+                <li><a href="#">Level 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 1</a></li>
+            <li><a href="#">Level 1</a></li>
+            <li class="divider"></li>
+            <li><label>Section Name</label></li>
+            <li><a href="#">Level 1</a></li>
+            <li><a href="#">Level 1</a></li>
+            <li><a href="#">Level 1</a></li>
+            <li class="divider"></li>
+            <li><a href="#">See all &rarr;</a></li>
+          </ul>
+        </li>
+        <li class="divider hide-for-small"></li>
+      </ul>
+
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider show-for-medium-and-up"></li>
+        <li class="has-dropdown">
+          <a href="#">Item 2</a>
+          <ul class="dropdown">
+            <li><label>Section Name</label></li>
+            <li><a href="#" class="">Level 1</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><label>Section Name</label></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><a href="#">See all &rarr;</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  
+  
+
+<!-- end of top bar -->
+
+  <div class="one columns centered" style="width:30%; height:30%"><img src="images/logo.png"  /></div>
+
+  <!-- GRID -->
+
+  <div class="row">
+  <div style="background-image: url(images/comida.jpg); height: 300px; width: 50%;" class="three columns">
+    .four.columns
+  </div>
+  <div class="three columns">
+    .four.columns
+  </div>
+  <div class="three columns">
+    .four.columns
+  </div>
+  <div class="three columns">
+    .four.columns
+  </div>
+</div>
+
+
+ 
+  <div id="exampleModal" class="reveal-modal">
+    <h2>This is a modal.</h2>
+    <p>
+      Reveal makes these very easy to summon and dismiss. The close button is simple an anchor with a unicode 
+      character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will 
+      also dismiss it.
+    </p>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+    </script> 
+  
+</body>
+</html>
